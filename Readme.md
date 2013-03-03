@@ -17,7 +17,7 @@ getServers(function(err, servers){
 
   setTimeout(function(){
     console.log("Runite rock respawned on " + name);
-  }, respawn * 1000);
+  }, respawn);
 });
 ```
 
