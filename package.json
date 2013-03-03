@@ -1,6 +1,6 @@
 {
   "name": "osrs-respawns",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Old School RuneScape respawn time functions",
   "main": "index.js",
   "scripts": {
