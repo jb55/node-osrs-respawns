@@ -13,7 +13,7 @@ var getServers = require('osrs-servers')
 getServers(function(err, servers){
   var name = "Old School 3";
   var world = _(servers).find(function(server){ return server.name == name; });
-  var respawn = respawns.rocks.rune(world.users);
+  var respawn = respawns.rocks.rune(world.players);
 
   setTimeout(function(){
     console.log("Runite rock respawned on " + name);
