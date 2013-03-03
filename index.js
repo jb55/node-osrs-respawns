@@ -1,14 +1,14 @@
 
 var rocks = module.exports.rocks = {};
 
-rocks.runite = rocks.rune = function(population) {
-  return 1500 - ((3 * population) / 8);
+rocks.runite = rocks.rune = function(players) {
+  return 1500000 - players * 375;
 }
 
-rocks.adamantite = rocks.adamant = function(population) {
-  return 48 - ((3 * population) / 25);
+rocks.adamantite = rocks.adamant = function(players) {
+  return 480000 - players * 120;
 }
 
-rocks.mithril = rocks.mith = function(population) {
-  return 240 - ((3 * population) / 50);
+rocks.mithril = rocks.mith = function(players) {
+  return 240000 - players * 60;
 }
