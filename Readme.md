@@ -8,7 +8,7 @@ Respawn timers for \[Old School\] RuneScape
 ```js
 var getServers = require('osrs-servers')
   , respawns   = require('osrs-respawns')
-  , _          = require('underscore');
+  , _          = require('underscore')._;
 
 getServers(function(err, servers){
   var name = "Old School 3";
@@ -16,8 +16,8 @@ getServers(function(err, servers){
   var respawn = respawns.rocks.rune(world.users);
 
   setTimeout(function(){
-    console.log("Rune ore respawned on " + name);
-  }, respawn);
+    console.log("Runite rock respawned on " + name);
+  }, respawn * 1000);
 });
 ```
 
